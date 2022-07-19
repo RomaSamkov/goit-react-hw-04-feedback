@@ -6,20 +6,20 @@ import Statistics from './Statistics';
 import Notification from './Notification';
 
 export const App = () => {
-  const [good, setgood] = useState(0);
-  const [neutral, setneutral] = useState(0);
-  const [bad, setbad] = useState(0);
+  const [good, setGood] = useState(0);
+  const [neutral, setNeutral] = useState(0);
+  const [bad, setBad] = useState(0);
 
   const onLeaveFeedback = value => {
     switch (value) {
       case 'good':
-        setgood(prev => prev + 1);
+        setGood(prev => prev + 1);
         break;
       case 'neutral':
-        setneutral(prev => prev + 1);
+        setNeutral(prev => prev + 1);
         break;
       case 'bad':
-        setbad(prev => prev + 1);
+        setBad(prev => prev + 1);
         break;
 
       default:
